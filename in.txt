@@ -1,0 +1,14 @@
+let fib := (\x.(if x = 2 then 1 else (if x = 1 then 1 else ( (fib (x-2)) + (fib (x-1) ) ) ) ) ) in fib (10)
+let fact := (\x.(if x = 1 then 1 else (x * (fact (x-1) ) ) ) ) in fact (10)
+let power := (\x.(if x = 0 then 1 else (2 * power (x-1)))) in power (10)
+let sum:= (\x.(if x = 1 then 1 else (x + sum (x-1)))) in sum (10)
+let c := \x.(x*x) in c (10)
+let c := \x.(x*x) (5) in c
+\x.(\y.(x+y) (10)) (10)
+let c := 5 in (let d := 3 in (c+d) )
+let c := \p.(p*p+4) in (let d := 3 in (c (d)))
+\x.(\y.(x+y) (10)) (\x.(x+4) (12))
+if T then 4 + 5 else 10
+if 3=3 then 7 * 10 + 4 else 5
+if 3 then 0 else 2
+\x.(3) (y)
